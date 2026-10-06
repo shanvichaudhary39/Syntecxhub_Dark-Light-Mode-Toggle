@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f7f4" />
+    <title>Mode — A little more light</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#" aria-label="Mode home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none">
+              <path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42m-9.88 9.88-1.42 1.42" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.7"/>
+            </svg>
+          </span>
+          mode
+        </a>
+        <span class="project-label">Project 03 · Theme switch</span>
+      </header>
+
+      <main>
+        <section class="intro" aria-labelledby="page-title">
+          <p class="eyebrow">Make it yours</p>
+          <h1 id="page-title">A little more <span>light.</span></h1>
+          <p class="intro-copy">A thoughtful theme switch for every hour of the day. Pick your mood and we’ll remember it for next time.</p>
+        </section>
+
+        <section class="theme-card" aria-labelledby="theme-heading">
+          <div class="card-heading">
+            <div>
+              <h2 id="theme-heading">Your appearance</h2>
+              <p>Switch between a bright start and a softer night.</p>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+              <svg class="toggle-glyph sun-glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.7"/>
+                <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+              <svg class="toggle-glyph moon-glyph" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.2 15.2A8.5 8.5 0 0 1 8.8 3.8 8.6 8.6 0 1 0 20.2 15.2Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="toggle-thumb" aria-hidden="true">
+                <svg id="thumb-icon" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8"/>
+                  <path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <div class="preview" aria-live="polite">
+            <div class="preview-top">
+              <span class="preview-dot" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path d="M4 18.5 9.5 13l3.5 3.5 7-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.5 8.5H20v4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <div>
+                <div class="preview-title">Your space, your way</div>
+                <div class="preview-subtitle" id="theme-name">Light mode</div>
+              </div>
+            </div>
+            <div class="preview-content">Small changes can make a big difference. Your color palette updates instantly, keeping everything easy on the eyes.</div>
+            <div class="swatches" aria-hidden="true">
+              <span class="swatch"></span>
+              <span class="swatch"></span>
+              <span class="swatch"></span>
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <span class="status"><span class="status-indicator" aria-hidden="true"></span><span id="status-label">Light theme is on</span></span>
+            <span class="storage-note">Preference saved on this device</span>
+          </div>
+        </section>
+      </main>
+
+      <footer class="page-footer">A calmer screen, at any time of day.</footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
